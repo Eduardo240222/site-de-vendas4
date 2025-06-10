@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page | skate shop skatista sem pista</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #121213;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .beneficios {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .beneficio {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .formulario {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .formulario input, .formulario button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    .formulario button {
+      background: #070707;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .formulario button:hover {
+      background: #568cf0;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .produto {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .produto img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .produto h3 {
+      font-size: 1.5em;
+      margin-top: 15px;
+    }
+
+    .produto p {
+      font-size: 1.1em;
+      color: #666;
+    }
+
+    .produto button {
+      background-color: #568cf0;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .produto button:hover {
+      background-color: #0c70d5;
+    }
+
+    footer {
+      background: #0c0c0c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    footer.show {
+      opacity: 1;
+    }
+
+    footer a {
+      color: #568cf0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer p {
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Monte seu skate com a skate shop skatista sem pista</h1>
+    <img src="https://i0.wp.com/hawaiisurfpoint.com.br/wp-content/uploads/2019/08/element-1.png?w=110" alt="Logo skate shop">
+    <p>Cadastre-se agora e receba uma promoção incrivel em nosso site.</p>
+  </header>
+
+  <section>
+    <h1>Agora veja alguns atletas que usam nossas peças.</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/aVygkqp0DB8?si=UecRjUupbbEgvpDm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>Por que escolher a gente?</h2>
+    <div class="beneficios">
+      <div class="beneficio">
+        <h3>🚀 Resultado Rápido</h3>
+        <p>Veja mudanças visíveis em seu rolê com as nossas peças de ultima qualidade.</p>
+      </div>
+      <div class="beneficio">
+        <h3>📊 porque escolher nosso site?</h3>
+        <p>Nosso site tem qualidade em todos os produtos e tem um dos melhores atendimentos.</p>
+      </div>
+      <div class="beneficio">
+        <h3>🤝 Suporte Especializado</h3>
+        <p>Equipe pronta para te ajudar a qualquer momento.</p>
+      </div>
+    </div>
+
+    <div class="produtos">
+      <div class="produto">
+        <img src="https://acdn-us.mitiendanube.com/stores/002/907/587/products/skate-pro-kit-tree-on-fire-purple1-2ff26b89c123fef73d16797002912457-640-0.png" alt="Produto 1">
+        <h3>Skate Pro X</h3>
+        <p>O skate ideal para iniciantes, com material durável e design único.</p>
+        <p><strong>R$ 350,00</strong></p>
+        <button>Comprar Agora</button>
+      </div>
+      <div class="produto">
+        <img src="https://acdn-us.mitiendanube.com/stores/002/907/587/products/skate-pro-kit-on-fire-blue1-8e0ca5a9a8ea03894c16797032456073-640-0.png" alt="Produto 2">
+        <h3>Skate Urban</h3>
+        <p>Para quem gosta de andar pelas ruas, com rodas que garantem mais aderência.</p>
+        <p><strong>R$ 400,00</strong></p>
+        <button>Comprar Agora</button>
+      </div>
+      <div class="produto">
+        <img src="https://acdn-us.mitiendanube.com/stores/002/907/587/products/skate-pro-kit-love-girls-pink-head1-7e158761d7251599bd16797030876890-640-0.png" alt="Produto 3">
+        <h3>Skate Xtreme</h3>
+        <p>Desempenho extremo para manobras radicais, um verdadeiro aliado do skatista.</p>
+        <p><strong>R$ 550,00</strong></p>
+        <button>Comprar Agora</button>
+      </div>
+    </div>
+
+    <div class="formulario">
+      <h2>Cadastre-se agora</h2>
+      <form id="leadForm">
+        <input type="text" id="nome" placeholder="Seu nome completo" required />
+        <input type="email" id="email" placeholder="Seu e-mail" required />
+        <input type="tel" id="telefone" placeholder="Seu telefone (opcional)" />
+        <button type="submit">Quero me cadastrar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p>&copy; 2025 Skatistasempista.com - Todos os direitos reservados.</p>
+    <p>Feito com ❤️ por <a href="https://www.skatistasempista.com">Skatistasempista.com</a></p>
+    <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Serviço</a></p>
+  </footer>
+  <script>
+    // Exibe o rodapé quando a página rola até o fim
+    window.addEventListener('scroll', function() {
+      const footer = document.getElementById('footer');
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+
+      if (scrollPosition >= documentHeight - 10) {
+        footer.classList.add('show');
+      } else {
+        footer.classList.remove('show');
+      }
+    });
+
+    // Função do formulário
+    document.getElementById('leadForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nome = document.getElementById('nome').value.trim();
+      const email = document.getElementById('email').value.trim();
+
+      if (!nome || !email) {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+        return;
+      }
+
+      const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      if (!emailRegex.test(email)) {
+        alert('Por favor, insira um e-mail válido.');
+        return;
+      }
+
+      alert(`Obrigado, ${
+
